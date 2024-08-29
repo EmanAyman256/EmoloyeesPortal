@@ -1,0 +1,43 @@
+<div class="container p-4 bg-main rounded mt-5 w-50 ">
+
+<form [formGroup]="newUserForm" (ngSubmit)="onSubmit()" class="text-white">
+    <!-- <div class="mb-3">
+        <label for="ID">Employee ID</label>
+        <input class=" form-control w-75" type="number" name="ID"  formControlName="id">
+    </div> -->
+    <div class="mb-3">
+        <label for="name">Employee Name</label>
+        <input class="form-control w-75" type="text" name="name" formControlName="name">
+
+    </div>
+<div class="mb-3" formGroupName="address">
+    <div class="row">
+        <div class="col-md-6">
+            <label for="street">Street </label>
+            <input class="form-control w-100" type="text" name="street" formControlName="street" >
+
+        </div>
+        <div class="col-md-5">
+            <label for="city">City </label>
+            <input class="form-control w-75" type="text" name="city" formControlName="city" >
+
+        </div>
+
+    </div>
+</div>
+<div class="mb-3">
+    <label for="phone">Employee E-mail</label>
+    <input class="form-control w-75" type="email" name="email" formControlName="email" >
+</div>
+<div class="mb-3">
+    <label for="phone">Employee Phone</label>
+    <input class="form-control w-75" type="phone" name="phone" formControlName="phone" >
+
+</div>
+<div class="mb-3" formGroupName="company">
+    <label for="name">Employee Company</label>
+    <input class="form-control w-75" type="text" name="name" formControlName="name">
+</div>
+   <button class="btn btn-success mt-3" type="submit">Save & Submit</button>
+</form>
+</div>

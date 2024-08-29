@@ -1,0 +1,30 @@
+<div class="backdrop"></div>
+
+<h2 class="text-center mt-3">Edit Post</h2>
+<div class="container mt-2">
+    <div class="col-md-6 offset-3">
+        <form class="form-group" (ngSubmit)="onSubmit()">
+          <p>
+            <label for="name" class="fw-bold">Edited Name </label>
+            <input class=" w-100 form-control" type="text" id="name" name="name" [(ngModel)]="enteredName"/>
+          </p>
+      
+          <p>
+            <label for="editPhone"  class="fw-bold">Edited Phone </label>
+            <input class="w-100 form-control" type="text" id="editPhone" name="editPhone" [(ngModel)]="enteredPhone"/>
+    
+          </p>
+          <p>
+            <label for="editEmail"  class="fw-bold">Edited E-mail </label>
+            <input class="w-100 form-control" type="email" id="editEmail" name="editEmail" [(ngModel)]="enteredEmail" />
+          </p>
+      
+          <p>
+              <button class="btn btn-success me-2" type="submit" >Update</button>
+            <button class="btn btn-danger" type="button">Cancel</button>
+          </p>
+        </form>
+
+    </div>
+
+</div>
